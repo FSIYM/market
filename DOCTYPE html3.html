@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSIY's Market - BUY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* added a light gray background */
+            background-image: linear-gradient(to bottom, #f0f0f0, #e0e0e0); /* added a subtle gradient background */
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            border-bottom: 2px solid #444; /* added a bottom border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added a box shadow effect */
+            margin-top: 50px; /* increased margin to move header down */
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease; /* added a transition effect */
+            font-size: 24px; /* increased font size */
+            animation: flicker 2s infinite; /* added a flickering animation */
+        }
+        
+        @keyframes flicker {
+            0% {
+                color: #fff;
+            }
+            50% {
+                color: rgb(255, 255, 255);
+            }
+            100% {
+                color: #fff;
+            }
+        }
+        
+        nav a:hover {
+            color: #ccc; /* changed hover color to a lighter gray */
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, #f0f0f0, #e0e0e0); /* added a subtle gradient background */
+            margin-top: 100px; /* added margin to move main section down */
+        }
+        
+        section {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff; /* added a white background */
+        }
+        
+        h1 {
+            font-size: 64px;
+            margin-bottom: 10px;
+            color: #333;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* added a text shadow effect */
+            animation: flicker 2s infinite; /* added a flickering animation */
+        }
+        
+        @keyframes flicker {
+            0% {
+                color: #333;
+            }
+            50% {
+                color: rgb(255, 255, 255);
+            }
+            100% {
+                color: #333;
+            }
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff; /* added a white background */
+        }
+        
+        .product h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .product p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        
+        .paypal-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .paypal-button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://discord.gg/8Pq4r9YVzP" target="_blank">Discord</a></li>
+                <li><a href="DOCTYPE htm123.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>FSIY's Market - BUY</h1>
+            <img src="P.png" alt="FSIY's Market Logo">
+            <p>What would you like to purchase?</p>
+            <div class="products">
+                <div class="product">
+                    <h2 id="product1-name">TikTok Followers (2K)</h2>
+                    <p id="product1-price">€1.80</p>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="your-paypal-email@gmail.com">
+                        <input type="hidden" name="item_name" value="Product 1">
+                        <input type="hidden" name="amount" value="19.99">
+                        <input type="hidden" name="currency_code" value="EURO">
+                        <button class="paypal-button">Buy Now</button>
+                    </form>
+                </div>
+                <div class="product">
+                    <h2 id="product2-name">Discord Server Boosting (14x 3months)</h2>
+                    <p id="product2-price">€4.80</p>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="your-paypal-email@gmail.com">
+                        <input type="hidden" name="item_name" value="Product 2">
+                        <input type="hidden" name="amount" value="9.99">
+                        <input type="hidden" name="currency_code" value="EURO">
+                        <button class="paypal-button">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
